@@ -24,7 +24,7 @@ const chokidar = require('chokidar')
 var dir = require('node-dir');
 
 var attachmentsPath = path.resolve('../../Sketch2Code.Web/Content/email-attachments');
-var destinationPath = '../../Sketch2Code.Web/Content/generated/';
+var destinationPath =  '../../Sketch2Code.Web/Content/generated/';
 var lastUpdatedFolder
 
 const app = new App();
@@ -50,7 +50,8 @@ app.setHandler({
 
     CheckEmailIntent() {
         checkForEmails()
-        this.ask('Hey  fetched your emails successfully');
+
+        this.ask(this.t('check.mails'));
     },
 
     applyVoiceToCodeIntent() {
@@ -60,7 +61,7 @@ app.setHandler({
                 lastUpdatedFolder);
             invokeSketch2Code(lastUpdatedFolder);
         });
-        this.ask('Voice to Code applied successfully');
+        this.ask(this.t('voice2code.success'));
     }
 });
 

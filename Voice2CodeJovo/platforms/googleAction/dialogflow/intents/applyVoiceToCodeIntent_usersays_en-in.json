@@ -2,6 +2,22 @@
 	{
 		"data": [
 			{
+				"text": "act on the last ",
+				"userDefined": false
+			},
+			{
+				"text": "mail",
+				"userDefined": true,
+				"alias": "mail",
+				"meta": "@EmailSlot"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
 				"text": "convert picture to html and reply ",
 				"userDefined": false
 			}

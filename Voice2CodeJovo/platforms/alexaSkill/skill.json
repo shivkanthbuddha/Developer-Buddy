@@ -22,6 +22,9 @@
         },
         "en-IN": {
           "name": "Draw2CodeVoice"
+        },
+        "ja-JP": {
+          "name": "Draw2CodeVoice"
         }
       },
       "isAvailableWorldwide": true,
