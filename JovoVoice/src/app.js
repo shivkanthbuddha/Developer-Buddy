@@ -60,7 +60,7 @@ module.exports.app = app;
 var downloadEmailAttachments = require('download-email-attachments');
 function checkFroEmails () {
     downloadEmailAttachments({
-        account: '"shivasdemo@gmail.com":Samaveda-1@imap.gmail.com:993',
+        account: '"shivasdemo@gmail.com":@imap.gmail.com:993',
         directory: '../../Sketch2Code.Web/Content/email-attachments',
         filenameTemplate: '{filename}',
         timeout: 2000,
@@ -125,7 +125,7 @@ function emptyFolder(dirPath, removeSelf) {
 
         var server = email.server.connect({
             user: "shivasdemo@gmail.com",   // enter your gmail id
-            password: "Samaveda-1",  // gmail password
+            password: "",  // gmail password
             host: "smtp.gmail.com",
             ssl: true
         });
