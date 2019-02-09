@@ -1,0 +1,50 @@
+[
+	{
+		"data": [
+			{
+				"text": "reply with ",
+				"userDefined": false
+			},
+			{
+				"text": "code",
+				"userDefined": true,
+				"alias": "code",
+				"meta": "@CodeSlot"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "give me the ",
+				"userDefined": false
+			},
+			{
+				"text": "code",
+				"userDefined": true,
+				"alias": "code",
+				"meta": "@CodeSlot"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "send me the ",
+				"userDefined": false
+			},
+			{
+				"text": "code",
+				"userDefined": true,
+				"alias": "code",
+				"meta": "@CodeSlot"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

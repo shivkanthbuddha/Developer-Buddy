@@ -1,0 +1,118 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "draw to code",
+      "intents": [
+        {
+          "name": "CheckEmailIntent",
+          "slots": [
+            {
+              "name": "New",
+              "type": "NewSlot"
+            },
+            {
+              "name": "email",
+              "type": "EmailSlot"
+            }
+          ],
+          "samples": [
+            "did i get any new {email} ",
+            "check {New} {email}",
+            "check email "
+          ]
+        },
+        {
+          "name": "DrawToCodeIntent",
+          "slots": [
+            {
+              "name": "code",
+              "type": "CodeSlot"
+            }
+          ],
+          "samples": [
+            "reply with {code}",
+            "give me the {code}",
+            "send me the {code}"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "mail",
+                "synonyms": [
+                  "image",
+                  "message",
+                  "email"
+                ]
+              }
+            }
+          ],
+          "name": "EmailSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Draw to Code",
+                "synonyms": [
+                  "sketch to code",
+                  "sketch2code",
+                  "draw2code"
+                ]
+              }
+            }
+          ],
+          "name": "SubjectContentSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "html",
+                "synonyms": [
+                  "webdesign",
+                  "webpage",
+                  "code"
+                ]
+              }
+            }
+          ],
+          "name": "CodeSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "New",
+                "synonyms": [
+                  "my",
+                  "latest"
+                ]
+              }
+            }
+          ],
+          "name": "NewSlot"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+	"invocation": "draw to code",
+	"intents": [
+		{
+			"name": "CheckEmailIntent",
+			"phrases": [
+				"did i get any new {email} ",
+				"check {New} {email}",
+				"check email "
+			],
+			"inputs": [
+				{
+					"name": "New",
+					"type": "NewSlot"
+				},
+				{
+					"name": "email",
+					"type": "EmailSlot"
+				}
+			]
+		},
+		{
+			"name": "DrawToCodeIntent",
+			"phrases": [
+				"reply with {code}",
+				"give me the {code}",
+				"send me the {code}"
+			],
+			"inputs": [
+				{
+					"name": "code",
+					"type": "CodeSlot"
+				}
+			]
+		}
+	],
+	"inputTypes": [
+		{
+			"name": "EmailSlot",
+			"values": [
+				{
+					"value": "mail",
+					"synonyms": [
+						"image",
+						"message",
+						"email"
+					]
+				}
+			]
+		},
+		{
+			"name": "SubjectContentSlot",
+			"values": [
+				{
+					"value": "Draw to Code",
+					"synonyms": [
+						"sketch to code",
+						"sketch2code",
+						"draw2code"
+					]
+				}
+			]
+		},
+		{
+			"name": "CodeSlot",
+			"values": [
+				{
+					"value": "html",
+					"synonyms": [
+						"webdesign",
+						"webpage",
+						"code"
+					]
+				}
+			]
+		},
+		{
+			"name": "NewSlot",
+			"values": [
+				{
+					"value": "New",
+					"synonyms": [
+						"my",
+						"latest"
+					]
+				}
+			]
+		}
+	],
+	"alexa": {
+		"interactionModel": {
+			"languageModel": {
+				"intents": [
+					{
+						"name": "AMAZON.CancelIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.HelpIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.StopIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.NavigateHomeIntent",
+						"samples": []
+					}
+				]
+			}
+		}
+	}
+}

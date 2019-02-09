@@ -1,0 +1,23 @@
+{
+	"name": "CheckEmailIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "email",
+					"value": "$email",
+					"dataType": "@EmailSlot"
+				},
+				{
+					"isList": false,
+					"name": "subjectContent",
+					"value": "$subjectContent",
+					"dataType": "@SubjectContentSlot"
+				}
+			]
+		}
+	]
+}

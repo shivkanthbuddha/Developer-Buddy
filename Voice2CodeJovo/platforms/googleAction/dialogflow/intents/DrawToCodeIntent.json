@@ -1,0 +1,17 @@
+{
+	"name": "DrawToCodeIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "code",
+					"value": "$code",
+					"dataType": "@CodeSlot"
+				}
+			]
+		}
+	]
+}
