@@ -19,6 +19,9 @@
           "examplePhrases": [
             "Alexa open hello world"
           ]
+        },
+        "en-IN": {
+          "name": "Draw2CodeVoice"
         }
       },
       "isAvailableWorldwide": true,

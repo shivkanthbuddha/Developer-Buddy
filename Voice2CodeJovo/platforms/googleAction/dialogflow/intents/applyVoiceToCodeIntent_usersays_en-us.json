@@ -1,0 +1,84 @@
+[
+	{
+		"data": [
+			{
+				"text": "convert picture to html and reply ",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "convert pictures to html ",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "convert images to html",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "reply all unread ",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "reply the last ",
+				"userDefined": false
+			},
+			{
+				"text": "mail",
+				"userDefined": true,
+				"alias": "mail",
+				"meta": "@EmailSlot"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "reply all",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "reply all unread ",
+				"userDefined": false
+			},
+			{
+				"text": "mail",
+				"userDefined": true,
+				"alias": "mail",
+				"meta": "@EmailSlot"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

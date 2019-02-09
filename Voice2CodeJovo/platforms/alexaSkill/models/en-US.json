@@ -22,22 +22,6 @@
           ]
         },
         {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        },
-        {
           "name": "applyVoiceToCodeIntent",
           "slots": [
             {
@@ -54,9 +38,39 @@
             "reply all",
             "reply all unread {mail}"
           ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
         }
       ],
       "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "New",
+                "synonyms": [
+                  "my",
+                  "latest"
+                ]
+              }
+            }
+          ],
+          "name": "NewSlot"
+        },
         {
           "values": [
             {
@@ -104,20 +118,6 @@
             }
           ],
           "name": "CodeSlot"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "New",
-                "synonyms": [
-                  "my",
-                  "latest"
-                ]
-              }
-            }
-          ],
-          "name": "NewSlot"
         },
         {
           "values": [

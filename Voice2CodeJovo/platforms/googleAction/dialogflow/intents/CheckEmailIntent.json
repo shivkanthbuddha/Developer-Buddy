@@ -7,15 +7,15 @@
 			"parameters": [
 				{
 					"isList": false,
-					"name": "email",
-					"value": "$email",
-					"dataType": "@EmailSlot"
+					"name": "New",
+					"value": "$New",
+					"dataType": "@NewSlot"
 				},
 				{
 					"isList": false,
-					"name": "subjectContent",
-					"value": "$subjectContent",
-					"dataType": "@SubjectContentSlot"
+					"name": "email",
+					"value": "$email",
+					"dataType": "@EmailSlot"
 				}
 			]
 		}

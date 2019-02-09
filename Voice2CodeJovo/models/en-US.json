@@ -40,6 +40,18 @@
 	],
 	"inputTypes": [
 		{
+			"name": "NewSlot",
+			"values": [
+				{
+					"value": "New",
+					"synonyms": [
+						"my",
+						"latest"
+					]
+				}
+			]
+		},
+		{
 			"name": "EmailSlot",
 			"values": [
 				{
@@ -77,18 +89,6 @@
 						"webdesign",
 						"webpage",
 						"code"
-					]
-				}
-			]
-		},
-		{
-			"name": "NewSlot",
-			"values": [
-				{
-					"value": "New",
-					"synonyms": [
-						"my",
-						"latest"
 					]
 				}
 			]

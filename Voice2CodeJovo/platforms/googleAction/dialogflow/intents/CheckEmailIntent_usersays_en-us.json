@@ -1,0 +1,58 @@
+[
+	{
+		"data": [
+			{
+				"text": "did i get any new ",
+				"userDefined": false
+			},
+			{
+				"text": "email",
+				"userDefined": true,
+				"alias": "email",
+				"meta": "@EmailSlot"
+			},
+			{
+				"text": " ",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "check ",
+				"userDefined": false
+			},
+			{
+				"text": "New",
+				"userDefined": true,
+				"alias": "New",
+				"meta": "@NewSlot"
+			},
+			{
+				"text": " ",
+				"userDefined": false
+			},
+			{
+				"text": "email",
+				"userDefined": true,
+				"alias": "email",
+				"meta": "@EmailSlot"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "check email ",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

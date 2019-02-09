@@ -1,0 +1,17 @@
+{
+	"name": "applyVoiceToCodeIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "mail",
+					"value": "$mail",
+					"dataType": "@EmailSlot"
+				}
+			]
+		}
+	]
+}
