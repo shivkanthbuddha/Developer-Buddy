@@ -1,0 +1,102 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "draw to code",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CheckEmailIntent",
+          "slots": [
+            {
+              "name": "email",
+              "type": "EmailSlot"
+            },
+            {
+              "name": "subjectContent",
+              "type": "SubjectContentSlot"
+            }
+          ],
+          "samples": [
+            "did you get a {email} with subject {subjectContent}"
+          ]
+        },
+        {
+          "name": "DrawToCodeIntent",
+          "slots": [
+            {
+              "name": "code",
+              "type": "CodeSlot"
+            }
+          ],
+          "samples": [
+            "reply with {code}",
+            "give me the {code}",
+            "send me the {code}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "mail",
+                "synonyms": [
+                  "image",
+                  "message",
+                  "email"
+                ]
+              }
+            }
+          ],
+          "name": "EmailSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Draw to Code",
+                "synonyms": [
+                  "sketch to code",
+                  "sketch2code",
+                  "draw2code"
+                ]
+              }
+            }
+          ],
+          "name": "SubjectContentSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "html",
+                "synonyms": [
+                  "webdesign",
+                  "webpage",
+                  "code"
+                ]
+              }
+            }
+          ],
+          "name": "CodeSlot"
+        }
+      ]
+    }
+  }
+}
