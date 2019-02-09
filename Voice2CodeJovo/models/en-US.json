@@ -1,5 +1,5 @@
 {
-	"invocation": "draw to code",
+	"invocation": "voice to code",
 	"intents": [
 		{
 			"name": "CheckEmailIntent",
@@ -20,16 +20,20 @@
 			]
 		},
 		{
-			"name": "DrawToCodeIntent",
+			"name": "applyVoiceToCodeIntent",
 			"phrases": [
-				"reply with {code}",
-				"give me the {code}",
-				"send me the {code}"
+				"convert picture to html and reply ",
+				"convert pictures to html ",
+				"convert images to html",
+				"reply all unread ",
+				"reply the last {mail}",
+				"reply all",
+				"reply all unread {mail}"
 			],
 			"inputs": [
 				{
-					"name": "code",
-					"type": "CodeSlot"
+					"name": "mail",
+					"type": "EmailSlot"
 				}
 			]
 		}
@@ -41,7 +45,10 @@
 				{
 					"value": "mail",
 					"synonyms": [
-						"image",
+						"messages",
+						"message",
+						"mails",
+						"emails",
 						"message",
 						"email"
 					]
@@ -82,6 +89,18 @@
 					"synonyms": [
 						"my",
 						"latest"
+					]
+				}
+			]
+		},
+		{
+			"name": "VoiceToCodeSlot",
+			"values": [
+				{
+					"value": "voicetoCode",
+					"synonyms": [
+						"voice two code",
+						"voice to code"
 					]
 				}
 			]

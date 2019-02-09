@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "draw to code",
+      "invocationName": "voice to code",
       "intents": [
         {
           "name": "CheckEmailIntent",
@@ -22,20 +22,6 @@
           ]
         },
         {
-          "name": "DrawToCodeIntent",
-          "slots": [
-            {
-              "name": "code",
-              "type": "CodeSlot"
-            }
-          ],
-          "samples": [
-            "reply with {code}",
-            "give me the {code}",
-            "send me the {code}"
-          ]
-        },
-        {
           "name": "AMAZON.CancelIntent",
           "samples": []
         },
@@ -50,6 +36,24 @@
         {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
+        },
+        {
+          "name": "applyVoiceToCodeIntent",
+          "slots": [
+            {
+              "name": "mail",
+              "type": "EmailSlot"
+            }
+          ],
+          "samples": [
+            "convert picture to html and reply ",
+            "convert pictures to html ",
+            "convert images to html",
+            "reply all unread ",
+            "reply the last {mail}",
+            "reply all",
+            "reply all unread {mail}"
+          ]
         }
       ],
       "types": [
@@ -59,7 +63,10 @@
               "name": {
                 "value": "mail",
                 "synonyms": [
-                  "image",
+                  "messages",
+                  "message",
+                  "mails",
+                  "emails",
                   "message",
                   "email"
                 ]
@@ -111,6 +118,20 @@
             }
           ],
           "name": "NewSlot"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "voicetoCode",
+                "synonyms": [
+                  "voice two code",
+                  "voice to code"
+                ]
+              }
+            }
+          ],
+          "name": "VoiceToCodeSlot"
         }
       ]
     }

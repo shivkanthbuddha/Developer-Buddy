@@ -23,7 +23,7 @@ var email = require('emailjs/email'); // send an email
 const chokidar = require('chokidar')
 var dir = require('node-dir');
 
-var attachmentsPath = '../../Sketch2Code.Web/Content/email-attachments';
+var attachmentsPath = path.resolve('../../Sketch2Code.Web/Content/email-attachments');
 var destinationPath = '../../Sketch2Code.Web/Content/generated/';
 var lastUpdatedFolder
 
@@ -37,6 +37,7 @@ app.use(
     new GoogleSheetsCMS()
 );
 
+
 // ------------------------------------------------------------------
 // APP LOGIC
 // ------------------------------------------------------------------
@@ -44,13 +45,23 @@ app.use(
 app.setHandler({
     LAUNCH() {
         this.ask(this.t('welcome.speech'));
-        checkForEmails()
+  
     },
 
     CheckEmailIntent() {
         checkForEmails()
-        //this.tell('Hey ' + this.$inputs.name.value + ', nice to meet you!');
+        this.ask('Hey  fetched your emails successfully');
     },
+
+    applyVoiceToCodeIntent() {
+        getLastUpdatedFolder({ directory: attachmentsPath }, (
+            lastUpdatedFolder = null) => {
+            console.log("#### lastUpdatedFolder = " +
+                lastUpdatedFolder);
+            invokeSketch2Code(lastUpdatedFolder);
+        });
+        this.ask('Voice to Code applied successfully');
+    }
 });
 
 module.exports.app = app;
@@ -83,12 +94,7 @@ async function checkForEmails() {
     });
     //sleep(6000)
 
-   await getLastUpdatedFolder({ directory: attachmentsPath }, (
-        lastUpdatedFolder = null) => {
-        console.log("#### lastUpdatedFolder = " +
-            lastUpdatedFolder);
-        invokeSketch2Code(lastUpdatedFolder);
-    });
+   
 
 }
 
@@ -204,13 +210,12 @@ function invokeSketch2Code(lastUpdatedFolder) {
                     lastUpdatedFolder + "-" + file);
 
                 // Watch for the folder and send email 
-                chokidar.watch(path.resolve(destinationPath +
-                    "result.html"), { ignored: /(^|[\/\\])\../ }).on(
-                        'add', (event, path) => {
-                            //console.log(event, path);
-                            console.log("added ");
-                            sendEmail();
-                        });
+                chokidar.watch(path.resolve(destinationPath), { ignored: /(^|[\/\\])\../ }).on(
+                    'add', (event, path) => {
+                        console.log(event);
+                        sendEmail();
+                    });
+
             }
         });
     });
