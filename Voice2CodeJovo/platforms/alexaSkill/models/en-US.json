@@ -1,139 +1,144 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "voice to code",
-      "intents": [
-        {
-          "name": "CheckEmailIntent",
-          "slots": [
-            {
-              "name": "New",
-              "type": "NewSlot"
-            },
-            {
-              "name": "email",
-              "type": "EmailSlot"
-            }
-          ],
-          "samples": [
-            "did i get any new {email} ",
-            "check {New} {email}",
-            "check email "
-          ]
-        },
-        {
-          "name": "applyVoiceToCodeIntent",
-          "slots": [
-            {
-              "name": "mail",
-              "type": "EmailSlot"
-            }
-          ],
-          "samples": [
-            "convert picture to html and reply ",
-            "convert pictures to html ",
-            "convert images to html",
-            "reply all unread ",
-            "reply the last {mail}",
-            "reply all",
-            "reply all unread {mail}"
-          ]
-        },
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "name": {
-                "value": "New",
-                "synonyms": [
-                  "my",
-                  "latest"
-                ]
-              }
-            }
-          ],
-          "name": "NewSlot"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "mail",
-                "synonyms": [
-                  "messages",
-                  "message",
-                  "mails",
-                  "emails",
-                  "message",
-                  "email"
-                ]
-              }
-            }
-          ],
-          "name": "EmailSlot"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "Draw to Code",
-                "synonyms": [
-                  "sketch to code",
-                  "sketch2code",
-                  "draw2code"
-                ]
-              }
-            }
-          ],
-          "name": "SubjectContentSlot"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "html",
-                "synonyms": [
-                  "webdesign",
-                  "webpage",
-                  "code"
-                ]
-              }
-            }
-          ],
-          "name": "CodeSlot"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "voicetoCode",
-                "synonyms": [
-                  "voice two code",
-                  "voice to code"
-                ]
-              }
-            }
-          ],
-          "name": "VoiceToCodeSlot"
-        }
-      ]
-    }
-  }
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "voice to code",
+			"types": [
+				{
+					"name": "NewSlot",
+					"values": [
+						{
+							"id": null,
+							"name": {
+								"value": "New",
+								"synonyms": [
+									"my",
+									"latest"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "EmailSlot",
+					"values": [
+						{
+							"id": null,
+							"name": {
+								"value": "mail",
+								"synonyms": [
+									"messages",
+									"message",
+									"mails",
+									"emails",
+									"message",
+									"email"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "SubjectContentSlot",
+					"values": [
+						{
+							"id": null,
+							"name": {
+								"value": "Draw to Code",
+								"synonyms": [
+									"sketch to code",
+									"sketch2code",
+									"draw2code"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "CodeSlot",
+					"values": [
+						{
+							"id": null,
+							"name": {
+								"value": "html",
+								"synonyms": [
+									"webdesign",
+									"webpage",
+									"code"
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "VoiceToCodeSlot",
+					"values": [
+						{
+							"id": null,
+							"name": {
+								"value": "voicetoCode",
+								"synonyms": [
+									"voice two code",
+									"voice to code"
+								]
+							}
+						}
+					]
+				}
+			],
+			"intents": [
+				{
+					"name": "CheckEmailIntent",
+					"samples": [
+						"did i get any new {email} ",
+						"check {New} {email}",
+						"check email "
+					],
+					"slots": [
+						{
+							"name": "New",
+							"type": "NewSlot"
+						},
+						{
+							"name": "email",
+							"type": "EmailSlot"
+						}
+					]
+				},
+				{
+					"name": "applyVoiceToCodeIntent",
+					"samples": [
+						"convert picture to html and reply ",
+						"convert pictures to html ",
+						"convert images to html",
+						"reply all unread ",
+						"reply the last {mail}",
+						"reply all",
+						"reply all unread {mail}"
+					],
+					"slots": [
+						{
+							"name": "mail",
+							"type": "EmailSlot"
+						}
+					]
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.NavigateHomeIntent",
+					"samples": []
+				}
+			]
+		}
+	}
 }

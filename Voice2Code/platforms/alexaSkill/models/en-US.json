@@ -1,0 +1,45 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "check emails",
+      "intents": [
+        {
+          "name": "WelcomeIntent",
+          "slots": [],
+          "samples": [
+            "welcome"
+          ]
+        },
+        {
+          "name": "CheckEmails",
+          "slots": [],
+          "samples": [
+            "name"
+          ]
+        },
+        {
+          "name": "ConvertImageToCode",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  }
+}

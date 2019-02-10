@@ -2,6 +2,16 @@
 	{
 		"data": [
 			{
+				"text": "メールを確認する",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
 				"text": "did i get any new ",
 				"userDefined": false
 			},

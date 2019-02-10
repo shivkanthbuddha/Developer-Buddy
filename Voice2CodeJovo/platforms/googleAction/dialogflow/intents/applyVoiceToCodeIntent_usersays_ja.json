@@ -2,6 +2,16 @@
 	{
 		"data": [
 			{
+				"text": "全員に返信",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
 				"text": "convert picture to html and reply ",
 				"userDefined": false
 			}

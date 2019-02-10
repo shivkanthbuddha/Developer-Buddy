@@ -1,0 +1,10 @@
+{
+	"name": "ConvertImageToCode",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": []
+		}
+	]
+}

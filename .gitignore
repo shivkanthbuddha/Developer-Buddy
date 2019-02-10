@@ -8,3 +8,4 @@ Import/Program.cs
 Sketch2Code.Web/Web.config
 Sketch2Code.Web/Content/email-attachments/*
 Sketch2Code.Web/Content/generated/*
+Voice2Code/package-lock.json

@@ -1,0 +1,10 @@
+{
+	"name": "CheckEmails",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": []
+		}
+	]
+}
