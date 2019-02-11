@@ -46,21 +46,23 @@ app.use(
 
 app.setHandler({
     LAUNCH() {
-        return this.toIntent('CheckEmails');
+        this.ask(this.t('welcome.speech'));
+
+//        return this.toIntent('CheckEmails');
     },
 
     WelcomeIntent() {
-        this.ask('I am waiting , what next ', 'I am waiting , what next ');
+        this.ask(this.t('waiting'));
     },
     CheckEmails() {
         checkForEmails()
         let speech = this.speechBuilder()
             .addText(this.t('checking.emails'))
-            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/processvoice2code.mp3')
+            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/processcheckmails.mp3')
             .addBreak('300ms')
             .addText(this.t('completed.emails'));
 
-        this.ask(speech, this.t('completed.emails'));
+        this.ask(speech, this.t('waiting'));
 
     },
     ConvertImageToCode() {
@@ -76,10 +78,10 @@ app.setHandler({
 
         let speech = this.speechBuilder()
             .addText(this.t('process.voice2code'))
-            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/processcheckemails.mp3')
+            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/processmain.mp3')
             .addBreak('300ms')
             .addText(this.t('voice2code.success'));
-        this.ask(speech, this.t('voice2code.success'));
+        this.ask(speech, this.t('waiting'));
 
     },
 

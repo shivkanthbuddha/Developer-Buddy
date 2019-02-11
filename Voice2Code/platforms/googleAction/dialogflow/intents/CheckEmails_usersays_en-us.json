@@ -2,7 +2,17 @@
 	{
 		"data": [
 			{
-				"text": "name",
+				"text": "check your inbox",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "did you get my emails",
 				"userDefined": false
 			}
 		],

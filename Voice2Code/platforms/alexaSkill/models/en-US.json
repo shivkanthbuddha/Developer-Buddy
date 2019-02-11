@@ -1,45 +1,50 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "check emails",
-      "intents": [
-        {
-          "name": "WelcomeIntent",
-          "slots": [],
-          "samples": [
-            "welcome"
-          ]
-        },
-        {
-          "name": "CheckEmails",
-          "slots": [],
-          "samples": [
-            "name"
-          ]
-        },
-        {
-          "name": "ConvertImageToCode",
-          "slots": [],
-          "samples": []
-        },
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
-        }
-      ],
-      "types": []
-    }
-  }
+	"interactionModel": {
+		"languageModel": {
+			"invocationName": "did you get my email",
+			"types": [],
+			"intents": [
+				{
+					"name": "WelcomeIntent",
+					"samples": [
+						"welcome"
+					],
+					"slots": []
+				},
+				{
+					"name": "CheckEmails",
+					"samples": [
+						"check your inbox",
+						"did you get my emails"
+					],
+					"slots": []
+				},
+				{
+					"name": "ConvertImageToCode",
+					"samples": [
+						"convert image to code",
+						"act voice to code",
+						"convert picture to code "
+					],
+					"slots": []
+				},
+				{
+					"name": "AMAZON.CancelIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.HelpIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.StopIntent",
+					"samples": []
+				},
+				{
+					"name": "AMAZON.NavigateHomeIntent",
+					"samples": []
+				}
+			]
+		}
+	}
 }

@@ -9,11 +9,55 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>HTML Result</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn').click(function (e) {
+                var isValid = true;
+                $('form-control').each(function () {
+                    if ($.trim($(this).val()) == '') {
+                        isValid = false;
+                        $(this).css({
+                            "border": "1px solid red",
+                            "background": "#FFCECE"
+                        });
+                    }
+                    else {
+                        $(this).css({
+                            "border": "",
+                            "background": ""
+                        });
+                    }
+                });
+                if (isValid == false)
+                    e.preventDefault();
+                else
+                    alert('Thank you for submitting');
+            });
+        });
+    </script>
+
+    <style>
+
+        .card {
+            background-color: #FFFFFF;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 16px;
+            color: rgba(0,0,0, 0.87);
+            background: #fff;
+            margin-top:20px;
+        }
+
+        body {
+            background: url(https://s3.ap-south-1.amazonaws.com/voice2code/bg_top2.gif) top repeat-x #e2e2e2;
+        }
+    </style>
 </head>
 <body>
-    <div class="container body-content">
+    <div class="container body-content card">
         @RenderBody()
     </div>
 </body>

@@ -1,33 +1,33 @@
 {
-  "manifest": {
-    "apis": {
-      "custom": {
-        "endpoint": {
-          "uri": "https://webhook.jovo.cloud/1fdd42ff-7057-4841-a4cf-47359835ad95",
-          "sslCertificateType": "Wildcard"
-        },
-        "interfaces": []
-      }
-    },
-    "manifestVersion": "1.0",
-    "publishingInformation": {
-      "locales": {
-        "en-US": {
-          "name": "Voice2Code",
-          "summary": "Sample Short Description",
-          "description": "Sample Full Description",
-          "examplePhrases": [
-            "Alexa open hello world"
-          ]
-        },
-        "en-IN": {
-          "name": "Voice2Code"
-        }
-      },
-      "isAvailableWorldwide": true,
-      "testingInstructions": "Sample Testing Instructions.",
-      "category": "EDUCATION_AND_REFERENCE",
-      "distributionCountries": []
-    }
-  }
+	"manifest": {
+		"apis": {
+			"custom": {
+				"endpoint": {
+					"sslCertificateType": "Wildcard",
+					"uri": "https://webhook.jovo.cloud/1fdd42ff-7057-4841-a4cf-47359835ad95"
+				},
+				"interfaces": []
+			}
+		},
+		"manifestVersion": "1.0",
+		"publishingInformation": {
+			"locales": {
+				"en-US": {
+					"name": "Voice2Code",
+					"summary": "Sample Short Description",
+					"description": "Sample Full Description",
+					"examplePhrases": [
+						"Alexa open hello world"
+					]
+				},
+				"en-IN": {
+					"name": "Voice2Code"
+				}
+			},
+			"isAvailableWorldwide": true,
+			"testingInstructions": "Sample Testing Instructions.",
+			"category": "EDUCATION_AND_REFERENCE",
+			"distributionCountries": []
+		}
+	}
 }

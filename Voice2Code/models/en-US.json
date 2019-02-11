@@ -1,5 +1,5 @@
 {
-	"invocation": "check emails",
+	"invocation": "did you get my email",
 	"intents": [
 		{
 			"name": "WelcomeIntent",
@@ -11,13 +11,18 @@
 		{
 			"name": "CheckEmails",
 			"phrases": [
-				"name"
+				"check your inbox",
+				"did you get my emails"
 			],
 			"inputs": []
 		},
 		{
 			"name": "ConvertImageToCode",
-			"phrases": [],
+			"phrases": [
+				"convert image to code",
+				"act voice to code",
+				"convert picture to code "
+			],
 			"inputs": []
 		}
 	],
