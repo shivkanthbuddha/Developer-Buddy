@@ -31,6 +31,6 @@ Dillinger uses a number of open source projects to work properly:
 
 Happy Path
 ===========
-voice to code
-check emails 
-reply the last email
+open developer buddy
+check emails
+convert image to code

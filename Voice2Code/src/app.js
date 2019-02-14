@@ -58,7 +58,7 @@ app.setHandler({
         checkForEmails()
         let speech = this.speechBuilder()
             .addText(this.t('checking.emails'))
-            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/processcheckmails.mp3')
+            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/checkemails.mp3')
             .addBreak('300ms')
             .addText(this.t('completed.emails'));
 
@@ -78,7 +78,7 @@ app.setHandler({
 
         let speech = this.speechBuilder()
             .addText(this.t('process.voice2code'))
-            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/processmain.mp3')
+            .addAudio('https://s3.ap-south-1.amazonaws.com/voice2code/mainaction.mp3')
             .addBreak('300ms')
             .addText(this.t('voice2code.success'));
         this.ask(speech, this.t('waiting'));
