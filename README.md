@@ -1,6 +1,6 @@
 # Sketch2Code Alexify
 
-Extending the Microsoft Sketch2code to leverage Alexa capabilities. All credits to [Sketch2Code][msoft] which transforms a handwritten user interface design from a picture to valid HTML markup code.
+Extending the Microsoft Sketch2code to leverage Alexa capabilities. All credits to Sketch2Code which transforms a handwritten user interface design from a picture to valid HTML markup code.
 
 # Happy Path!
 1) User want to transform any hands-drawn design into a HTML code would send a email 
