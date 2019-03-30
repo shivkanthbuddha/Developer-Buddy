@@ -26,7 +26,7 @@ Dillinger uses a number of open source projects to work properly:
 * Google SDK
 * Jovo
 * [node.js] - evented I/O for the backend
-* [jQuery] - 
+* [jQuery]  
 
 
 Happy Path
