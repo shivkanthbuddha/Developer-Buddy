@@ -16,7 +16,7 @@ namespace Import
         static void Main(string[] args)
         {
             // Create the Api, passing in the training key
-            string trainingKey = "a65ff0b70ab54d6abbb773d938b5aa94";
+            string trainingKey = "64d8e5bdbac646d2b681964b191a41bf";
             if (String.IsNullOrEmpty(trainingKey)) 
             {
                 Console.WriteLine("The custom vision training key needs to be set.");
