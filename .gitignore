@@ -11,3 +11,5 @@ Sketch2Code.Web/Content/generated/*
 Voice2Code/package-lock.json
 node_modules
 Sketch2Code.Api/local.settings.json
+Sketch2Code.Web/Web.config
+Sketch2Code.Web/Web.config
