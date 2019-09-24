@@ -12,7 +12,7 @@
     "emailjs": "^2.2.0",
     "fancy-log": "^1.3.3",
     "gradient-string": "^1.2.0",
-    "jovo-cms-googlesheets": "^2.0.12",
+    "jovo-cms-googlesheets": "^2.2.15",
     "jovo-db-filedb": "^2.0.2",
     "jovo-framework": "^2.0.14",
     "jovo-platform-alexa": "^2.0.2",
@@ -30,7 +30,7 @@
     "gulp-install": "^1.1.0",
     "gulp-run-command": "0.0.9",
     "gulp-zip": "^4.2.0",
-    "jest": "^23.6.0"
+    "jest": "^25.0.0"
   },
   "scripts": {
     "tsc": "node -v",
